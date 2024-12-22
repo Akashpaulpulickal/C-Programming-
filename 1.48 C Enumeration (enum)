@@ -1,0 +1,53 @@
+#include <stdio.h>
+
+// Define an enumeration
+enum Weekday {
+    SUNDAY,
+    MONDAY,
+    TUESDAY,
+    WEDNESDAY,
+    THURSDAY,
+    FRIDAY,
+    SATURDAY
+};
+
+int main() {
+    // Declare a variable of type enum Weekday
+    enum Weekday today;
+
+    // Assign a value to the variable
+    today = WEDNESDAY;
+
+    // Print the value of the variable
+    printf("Today is day number %d of the week.\n", today);
+
+    // Use a switch statement with the enum
+    switch (today) {
+        case SUNDAY:
+            printf("It's Sunday!\n");
+            break;
+        case MONDAY:
+            printf("It's Monday!\n");
+            break;
+        case TUESDAY:
+            printf("It's Tuesday!\n");
+            break;
+        case WEDNESDAY:
+            printf("It's Wednesday!\n");
+            break;
+        case THURSDAY:
+            printf("It's Thursday!\n");
+            break;
+        case FRIDAY:
+            printf("It's Friday!\n");
+            break;
+        case SATURDAY:
+            printf("It's Saturday!\n");
+            break;
+        default:
+            printf("Invalid day!\n");
+            break;
+    }
+
+    return 0;
+}
