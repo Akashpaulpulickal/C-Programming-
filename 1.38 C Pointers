@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+int main() {
+    // Declare variables
+    int integer = 42;
+    float floating = 3.14159;
+    char character = 'A';
+
+    // Declare pointers
+    int *intPtr = &integer;
+    float *floatPtr = &floating;
+    char *charPtr = &character;
+
+    // Print the values and addresses
+    printf("Value of integer: %d\n", integer);
+    printf("Address of integer: %p\n", (void*)intPtr);
+    printf("Value of floating: %.5f\n", floating);
+    printf("Address of floating: %p\n", (void*)floatPtr);
+    printf("Value of character: %c\n", character);
+    printf("Address of character: %p\n", (void*)charPtr);
+
+    // Modify values using pointers
+    *intPtr = 100;
+    *floatPtr = 2.71828;
+    *charPtr = 'B';
+
+    // Print the modified values
+    printf("\nModified values:\n");
+    printf("Value of integer: %d\n", integer);
+    printf("Value of floating: %.5f\n", floating);
+    printf("Value of character: %c\n", character);
+
+    return 0;
+}
